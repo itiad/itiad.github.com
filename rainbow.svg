@@ -11,22 +11,19 @@
   </style>
 
   <defs>
-    <linearGradient id="rainbow-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff0000">
-        <animate attributeName="stop-color" values="#ff0000; #00f; #ff0000" dur="5s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="25%" stop-color="#ff8000">
-        <animate attributeName="stop-color" values="#ff8000; #8000ff; #ff8000" dur="5s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="50%" stop-color="#ffff00">
-        <animate attributeName="stop-color" values="#ffff00; #f0f; #ffff00" dur="5s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="75%" stop-color="#00ff80">
-        <animate attributeName="stop-color" values="#00ff80; #ff0080; #00ff80" dur="5s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#00ffff">
-        <animate attributeName="stop-color" values="#00ffff; #ff00d4; #00ffff" dur="5s" repeatCount="indefinite" />
-      </stop>
+    <linearGradient id="rainbow-gradient" x1="-150%" y1="0%" x2="0%" y2="0%">
+      <!-- Balanced multi-color stops (evenly distributed spectrum) -->
+      <stop offset="0%" stop-color="#ff0080" />
+      <stop offset="16.6%" stop-color="#8000ff" />
+      <stop offset="33.3%" stop-color="#0080ff" />
+      <stop offset="50%" stop-color="#00ff80" />
+      <stop offset="66.6%" stop-color="#ffff00" />
+      <stop offset="83.3%" stop-color="#ff8000" />
+      <stop offset="100%" stop-color="#ff0080" />
+      
+      <!-- Slide left-to-right and back right-to-left -->
+      <animate attributeName="x1" values="-150%; 0%; -150%" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="0%; 150%; 0%" dur="6s" repeatCount="indefinite" />
     </linearGradient>
   </defs>
 
